@@ -1,0 +1,9 @@
+---
+
+- hosts: dbservers
+  name: install mariadb
+  tasks:
+    - name: Install mariadb
+      apt: name=mariadb state=latest
+
+
